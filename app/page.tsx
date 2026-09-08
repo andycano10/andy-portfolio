@@ -15,7 +15,7 @@ const projects = [
   },
   {
     number: "02",
-    title: "Autonomous Drone Vision",
+    title: "Autonomous Drone Interceptor",
     category: "Systems Engineering / Autonomous Systems",
     description:
       "An onboard vision system for tracking and engaging aerial targets.",
@@ -139,6 +139,32 @@ export default function Home() {
               Contact
             </a>
 
+            <a
+              href="/Resume/ANDY CANO AVILA - Design 2.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`transition-colors duration-300 ${
+                darkNav
+                  ? "text-black/50 hover:text-black"
+                  : "text-white/60 hover:text-white"
+              }`}
+            >
+              Resume
+            </a>
+
+            <a
+              href="/Resume/Andy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`transition-colors duration-300 ${
+                darkNav
+                  ? "text-black/50 hover:text-black"
+                  : "text-white/60 hover:text-white"
+              }`}
+            >
+              CAD Portfolio
+            </a>
+
           </div>
 
 
@@ -187,11 +213,58 @@ export default function Home() {
 
               <div className="max-w-xs">
 
+                {/* COMPANY / ORGANIZATION LOGOS */}
+                <div className="mb-8 grid grid-cols-4 items-center gap-5">
+
+                  <div className="flex h-10 items-center justify-center">
+                    <img
+                      src="/Images/Logos/Albers-Aerospace-Logo.png"
+                      alt="Albers Aerospace"
+                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
+                    />
+                  </div>
+
+                  <div className="flex h-10 items-center justify-center">
+                    <img
+                      src="/Images/Logos/NGCMaster19.png"
+                      alt="Northrop Grumman"
+                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
+                    />
+                  </div>
+
+                  <div className="flex h-10 items-center justify-center">
+                    <img
+                      src="/Images/Logos/ASME.webp"
+                      alt="ASME"
+                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
+                    />
+                  </div>
+
+                  <div className="flex h-10 items-center justify-center">
+                    <img
+                      src="/Images/Logos/shpe-logo.webp"
+                      alt="SHPE"
+                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
+                    />
+                  </div>
+
+                </div>
+
                 <p className="text-base leading-7 text-white/65">
                   Mechanical engineer focused on mechanical design, systems
                   engineering, and developing practical solutions to complex
                   problems, with a growing interest in robotics.
                 </p>
+
+                <div className="mt-6 flex items-center gap-3 text-sm text-white/60">
+                  <span className="flex h-7 w-7 items-center justify-center border-white/20 text-[10px]">
+                    ★
+                  </span>
+
+                  <span>
+                    HSF Scholar
+                  </span>
+                </div>
 
                 <a
                   href="#work"
@@ -409,13 +482,13 @@ export default function Home() {
               </p>
 
 
-              <div className="mt-14 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-white/10 pt-10 sm:grid-cols-4">
+              <div className="mt-14 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-white/10 pt-10 sm:grid-cols-5">
 
                 <Skill title="CAD" items="SolidWorks · Inventor · Fuaion 360" />
                 <Skill title="Analysis" items="FEA · MATLAB" />
-                <Skill title="Programming" items="Python · MAVLink" />
-                <Skill title="Systems" items="Robotics · Prosthesis · UAVs · Space Systems · Automotive" />
+                <Skill title="Programming" items="Python · MAVLink · VScode · ArduPilot" />
                 <Skill title="Protoyping" items="3D Printning · Metal Fabrication · Woodworking" />
+                <Skill title="Systems" items="Robotics · Prosthesis · UAVs · Space Systems · Automotive" />
 
               </div>
 
@@ -434,7 +507,7 @@ export default function Home() {
         className="mx-auto max-w-7xl px-6 py-32 lg:px-10 lg:py-40"
       >
 
-        <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-black/35">
+        <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-black/50">
           Contact
         </p>
 
@@ -450,14 +523,16 @@ export default function Home() {
           <div className="flex gap-3">
 
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:andycanoavila@gmail.com"
               className="rounded-full bg-[#171717] px-6 py-3 text-sm font-medium text-white transition hover:bg-black/75"
             >
               Email me
             </a>
 
             <a
-              href="#"
+              href="www.linkedin.com/in/andy-cano-avila"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full border border-black/15 px-6 py-3 text-sm font-medium transition hover:border-black/40"
             >
               LinkedIn
@@ -475,7 +550,7 @@ export default function Home() {
 
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-[11px] uppercase tracking-[0.15em] text-black/30 sm:flex-row">
 
-          <span>Andy Cano</span>
+          <span>Andy Cano-Avila</span>
 
           <span>Mechanical Engineering · Texas A&M</span>
 
@@ -498,11 +573,11 @@ function Skill({
   return (
     <div>
 
-      <p className="text-xs font-medium text-white/70">
+      <p className="text-base font-medium text-white/70">
         {title}
       </p>
 
-      <p className="mt-2 text-xs leading-5 text-white/35">
+      <p className="mt-2 text-sm leading-5 text-white/35">
         {items}
       </p>
 
