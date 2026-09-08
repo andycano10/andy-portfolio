@@ -499,7 +499,35 @@ export default function Home() {
 
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
 
+            {/* LEFT SIDE */}
+            {/* <div>
+
+              <div className="mb-10 w-full max-w-[360px] aspect-[4/5] overflow-hidden bg-white/5">
+                <img
+                  src="/Resume/welding.jpeg"
+                  alt="Andy Cano-Avila"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/30">
+                Engineering profile
+              </p>
+
+            </div> */}
+
             <div>
+
+              <div className="mb-10 w-full max-w-[360px] aspect-[4/5] overflow-hidden bg-white/5">
+                <video
+                  src="/Resume/driving.MOV"
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </div>
 
               <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/30">
                 Engineering profile
@@ -508,6 +536,8 @@ export default function Home() {
             </div>
 
 
+
+            {/* RIGHT SIDE */}
             <div>
 
               <h2 className="max-w-4xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
