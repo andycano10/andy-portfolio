@@ -88,7 +88,7 @@ export default function HydraulicRoboticHand() {
           <h1 className="mt-6 text-6xl font-medium leading-[0.9] tracking-[-0.06em] md:text-8xl">
             Hydraulic
             <br />
-            <span className="text-black/30">
+            <span className="text-black/50">
               Robotic Hand
             </span>
           </h1>
@@ -188,7 +188,7 @@ export default function HydraulicRoboticHand() {
 
           {[
             ["4+1", "Independently actuated fingers and thumb"],
-            ["100 lb", "Target load"],
+            ["100 lb", "Target carry load"],
             ["0.5 sec", "Open-to-close time"],
             ["400 PSI", "Hydraulic operating pressure"],
           ].map(([value, label]) => (
@@ -328,10 +328,10 @@ export default function HydraulicRoboticHand() {
           <div className="mt-16 grid gap-6 md:grid-cols-4">
 
             {[
-              ["01", "Hydraulic actuator", "Produces the input force."],
+              ["01", "Hydraulic actuators", "Produces the input force after recieving computer commands"],
               ["02", "Chain", "Transfers actuator force through the hand."],
-              ["03", "Sprocket", "Converts chain tension into torque."],
-              ["04", "Finger linkage", "Converts rotation into gripping motion."],
+              ["03", "Sprocket / Proximal", "Converts chain tension into torque, transferred into rotational motion of the proximal."],
+              ["04", "Finger linkage", "Converts proximal rotation into gripping motion via linkages and pivots."],
             ].map(([number, title, description]) => (
 
               <div
@@ -574,7 +574,7 @@ export default function HydraulicRoboticHand() {
           </p>
 
           <h2 className="mt-6 max-w-4xl text-4xl font-medium leading-tight tracking-[-0.04em] md:text-6xl">
-            Understanding how the various subsystems interact together is the toughest, yet most intrusting engineering.
+            Understanding how various subsystems interact is the toughest, yet most interesting part of the job.
           </h2>
 
         </div>

@@ -196,10 +196,13 @@ export default function Home() {
             </div>
 
 
-            <div className="grid gap-12 lg:grid-cols-[1fr_320px] lg:items-end">
+            {/* MAIN HERO */}
+            <div className="grid items-end gap-16 lg:grid-cols-[1fr_380px]">
 
+              {/* LEFT SIDE */}
               <div>
 
+                {/* SLOGAN */}
                 <h1 className="max-w-5xl text-[clamp(4rem,8vw,8rem)] font-medium leading-[0.9] tracking-[-0.02em]">
                   Designing
                   <br />
@@ -208,80 +211,118 @@ export default function Home() {
                   </span>
                 </h1>
 
+
+                {/* INFO BELOW SLOGAN */}
+                <div className="mt-12 max-w-xl">
+
+                  {/* COMPANY / ORGANIZATION LOGOS */}
+                  <div className="mb-8 grid w-full grid-cols-4 items-center gap-4">
+
+                    <div className="flex h-12 w-full items-center justify-start">
+                      <img
+                        src="/Images/Logos/Albers-Aerospace-Logo.png"
+                        alt="Albers Aerospace"
+                        className="max-h-8 max-w-[85%] object-contain opacity-60 grayscale brightness-0 invert"
+                      />
+                    </div>
+
+                    <div className="flex h-12 w-full items-center justify-center">
+                      <img
+                        src="/Images/Logos/NGCMaster19.png"
+                        alt="Northrop Grumman"
+                        className="max-h-14 max-w-[100%] object-contain opacity-60 grayscale brightness-0 invert"
+                      />
+                    </div>
+
+                    <div className="flex h-12 w-full items-center justify-center">
+                      <img
+                        src="/Images/Logos/ASME.webp"
+                        alt="ASME"
+                        className="max-h-14 max-w-[100%] object-contain opacity-60 grayscale brightness-0 invert"
+                      />
+                    </div>
+
+                    <div className="flex h-12 w-full items-center justify-end">
+                      <img
+                        src="/Images/Logos/shpe-logo.webp"
+                        alt="SHPE"
+                        className="max-h-8 max-w-[85%] object-contain opacity-60 grayscale brightness-0 invert"
+                      />
+                    </div>
+
+                  </div>
+
+
+                  {/* BIO */}
+                  <p className="max-w-2xl text-base leading-7 text-white/65">
+                    Mechanical engineer focused on mechanical design, systems
+                    engineering, and developing practical solutions to complex
+                    problems, with a growing interest in robotics.
+                  </p>
+
+
+                  {/* HSF */}
+                  <div className="mt-6 flex items-center gap-3 text-sm text-white/60">
+
+                    <span className="flex h-7 w-7 items-center justify-center text-[10px]">
+                      ★
+                    </span>
+
+                    <span>
+                      HSF Scholar
+                    </span>
+
+                  </div>
+
+                  <div className="mt-2 flex items-center gap-3 text-sm text-white/60">
+
+                    <span className="flex h-7 w-7 items-center justify-center text-[10px]">
+                      ★
+                    </span>
+
+                    <span>
+                      SHPE Vice President / Treasurer 24'-26'
+                    </span>
+
+                  </div>
+
+
+                  {/* EXPLORE */}
+                  <a
+                    href="#work"
+                    className="group mt-8 inline-flex items-center gap-3 text-sm font-medium"
+                  >
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 transition group-hover:bg-white group-hover:text-[#5A1F2B]">
+                      ↓
+                    </span>
+
+                    Explore my work
+                  </a>
+
+                </div>
+
               </div>
 
 
-              <div className="max-w-xs">
+              {/* RIGHT SIDE — PHOTO */}
+              <div className="flex self-stretch justify-end">
 
-                {/* COMPANY / ORGANIZATION LOGOS */}
-                <div className="mb-8 grid grid-cols-4 items-center gap-5">
+                <div className="w-full self-stretch overflow-hidden bg-white/5">
 
-                  <div className="flex h-10 items-center justify-center">
-                    <img
-                      src="/Images/Logos/Albers-Aerospace-Logo.png"
-                      alt="Albers Aerospace"
-                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
-                    />
-                  </div>
-
-                  <div className="flex h-10 items-center justify-center">
-                    <img
-                      src="/Images/Logos/NGCMaster19.png"
-                      alt="Northrop Grumman"
-                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
-                    />
-                  </div>
-
-                  <div className="flex h-10 items-center justify-center">
-                    <img
-                      src="/Images/Logos/ASME.webp"
-                      alt="ASME"
-                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
-                    />
-                  </div>
-
-                  <div className="flex h-10 items-center justify-center">
-                    <img
-                      src="/Images/Logos/shpe-logo.webp"
-                      alt="SHPE"
-                      className="max-h-8 max-w-full object-contain opacity-60 grayscale brightness-0 invert"
-                    />
-                  </div>
+                  <img
+                    src="/Resume/Andy-Prof.jpg"
+                    alt="Andy Cano-Avila"
+                    className="h-full w-full object-cover"
+                  />
 
                 </div>
-
-                <p className="text-base leading-7 text-white/65">
-                  Mechanical engineer focused on mechanical design, systems
-                  engineering, and developing practical solutions to complex
-                  problems, with a growing interest in robotics.
-                </p>
-
-                <div className="mt-6 flex items-center gap-3 text-sm text-white/60">
-                  <span className="flex h-7 w-7 items-center justify-center border-white/20 text-[10px]">
-                    ★
-                  </span>
-
-                  <span>
-                    HSF Scholar
-                  </span>
-                </div>
-
-                <a
-                  href="#work"
-                  className="group mt-8 inline-flex items-center gap-3 text-sm font-medium"
-                >
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 transition group-hover:bg-white group-hover:text-[#5A1F2B]">
-                    ↓
-                  </span>
-
-                  Explore my work
-                </a>
 
               </div>
 
             </div>
 
 
+            {/* BOTTOM TAGS */}
             <div className="mt-20 flex items-center justify-between border-t border-white/15 pt-5 text-[11px] uppercase tracking-[0.18em] text-white/40">
 
               <span>Robotics</span>

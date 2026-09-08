@@ -87,8 +87,8 @@ export default function DroneVision() {
           <h1 className="mt-6 text-6xl font-medium leading-[0.9] tracking-[-0.06em] md:text-8xl">
             Drone
             <br />
-            <span className="text-black/30">
-              Vision
+            <span className="text-black/50">
+              Interceptor
             </span>
           </h1>
 
@@ -181,10 +181,10 @@ export default function DroneVision() {
         <div className="mt-8 grid border-l border-t border-black/10 md:grid-cols-4">
 
           {[
-            ["AI Vision", "Onboard target detection and tracking"],
+            ["AI Vision", "Onboard target detection for all weather conditious"],
             ["400 ft", "Target operating distance"],
-            ["Ease of Launch", "Operational by anyone"],
-            ["2K", "Target imaging resolution"],
+            ["Takedown Efficiency", "Quick set up and successful takedown after single interception."],
+            ["In-flight Tracking", "Continous detection and interception mechanics while airborne"],
           ].map(([value, label]) => (
 
             <div
@@ -283,8 +283,8 @@ export default function DroneVision() {
               <div className="grid md:grid-cols-4">
 
                 {[
-                  ["01", "Camera", "Captures the environment."],
-                  ["02", "Jetson (Onboard AI)", "Processes data and ID's target."],
+                  ["01", "Camera", "Captures the environment at 2k resolution."],
+                  ["02", "Jetson (Onboard AI)", "Processes data and ID's target wihtin a 400ft range and various sky conditions."],
                   ["03", "Jetson (Computer)", "Determines target position within flight coordinates from ground and throughout flight."],
                   ["04", "Flight Controller", "Responds to the target's continous position with flight commands."],
                 ].map(([number, title, description]) => (
@@ -400,7 +400,7 @@ export default function DroneVision() {
             </h2>
 
             <p className="mt-8 max-w-lg text-base leading-7 text-black/70">
-              Testing was used to evaluate the integrated system and identify
+              Field testing was used to evaluate the integrated system and identify
               areas where sensing, tracking, and vehicle response could be
               improved.
             </p>
