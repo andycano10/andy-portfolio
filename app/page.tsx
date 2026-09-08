@@ -267,7 +267,7 @@ export default function Home() {
               <div className="relative aspect-[16/8] overflow-hidden bg-[#e7e7e2]">
 
                 <img
-                  src="/images/Robotic-Hand/Combined-Hand.png"
+                  src="/Images/Robotic-Hand/Combined-Hand.png"
                   alt="CAD model of hydraulic robotic hand"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
